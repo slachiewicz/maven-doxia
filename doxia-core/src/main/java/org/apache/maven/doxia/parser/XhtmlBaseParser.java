@@ -740,13 +740,13 @@ public class XhtmlBaseParser
     {
         if ( !baseStartTag( parser, sink ) )
         {
-            if ( getLog().isWarnEnabled() )
+            if ( logger.isWarnEnabled() )
             {
                 String position = "[" + parser.getLineNumber() + ":"
                     + parser.getColumnNumber() + "]";
                 String tag = "<" + parser.getName() + ">";
 
-                getLog().warn( "Unrecognized xml tag: " + tag + " at " + position );
+                logger.warn( "Unrecognized xml tag: " + tag + " at " + position );
             }
         }
     }
@@ -1265,9 +1265,9 @@ public class XhtmlBaseParser
     private void logMessage( String key, String msg )
     {
         final String log = "[XHTML Parser] " + msg;
-        if ( getLog().isDebugEnabled() )
+        if ( logger.isDebugEnabled() )
         {
-            getLog().debug( log );
+            logger.debug( log );
 
             return;
         }
@@ -1291,13 +1291,13 @@ public class XhtmlBaseParser
      */
     private void logWarnings()
     {
-        if ( getLog().isWarnEnabled() && this.warnMessages != null && !isSecondParsing() )
+        if ( logger.isWarnEnabled() && this.warnMessages != null && !isSecondParsing() )
         {
             for ( Map.Entry<String, Set<String>> entry : this.warnMessages.entrySet() )
             {
                 for ( String msg : entry.getValue() )
                 {
-                    getLog().warn( msg );
+                    logger.warn( msg );
                 }
             }
 

@@ -27,6 +27,7 @@ package org.apache.maven.doxia.logging;
  *
  * @author ltheussl
  * @since 1.1
+ * @deprecated use slf4j
  */
 @Deprecated
 public interface LogEnabled
@@ -36,5 +37,6 @@ public interface LogEnabled
      *
      * @param log a Log.
      */
+    @Deprecated
     void enableLogging( Log log );
 }
