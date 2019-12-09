@@ -213,7 +213,7 @@ under the License.
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-utils</artifactId>
-        <version>3.1.0</version>
+        <version>3.3.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -358,7 +358,7 @@ under the License.
                 <configuration>
                   <tasks>
                     <delete>
-                      <fileset dir="${java.io.tmpdir}" includes="**/*.dtd, **/*.ent, **/*.xsd" />
+                      <fileset dir="${java.io.tmpdir}" includes="**/*.dtd, **/*.ent, **/*.xsd"/>
                     </delete>
                   </tasks>
                 </configuration>
