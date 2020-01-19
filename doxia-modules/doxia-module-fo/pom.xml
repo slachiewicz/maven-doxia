@@ -78,7 +78,7 @@ under the License.
     <dependency>
       <groupId>commons-collections</groupId>
       <artifactId>commons-collections</artifactId>
-      <version>3.2.2</version>
+      <version>20040616</version>
       <!-- runtime dependency for commons-configuration -->
       <scope>runtime</scope>
     </dependency>
