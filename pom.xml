@@ -26,7 +26,7 @@ under the License.
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent</artifactId>
     <version>34</version>
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>org.apache.maven.doxia</groupId>
@@ -205,7 +205,7 @@ under the License.
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-utils</artifactId>
-        <version>3.3.0</version>
+        <version>3.5.0</version>
       </dependency>
 
       <!-- Apache Commons IO -->
@@ -354,7 +354,7 @@ under the License.
                 <configuration>
                   <tasks>
                     <delete>
-                      <fileset dir="${java.io.tmpdir}" includes="**/*.dtd, **/*.ent, **/*.xsd" />
+                      <fileset dir="${java.io.tmpdir}" includes="**/*.dtd, **/*.ent, **/*.xsd"/>
                     </delete>
                   </tasks>
                 </configuration>
