@@ -52,9 +52,7 @@
       </p>
 
       <p>
-        <strong>Note:</strong> Due to the Sink API abstractions, some language features of the underlying 
-        markup languages may not be fully supported by all parsers and sinks. Each format's reference 
-        page includes a "Limitations" section that documents any known restrictions.
+        <strong>Note:</strong> Due to the Sink API abstractions, some language features of the underlying markup languages may not be fully supported by all parsers and sinks. Each format's reference page includes a "Limitations" section that documents any known restrictions.
       </p>
 
       <p>

@@ -60,7 +60,6 @@
       <subsection name="References">
 
         <ul>
-          <li><a href="https://maven.apache.org/doxia/references/apt-format.html">APT Format Reference</a></li>
           <li><a href="https://maven.apache.org/doxia/modules/index.html">Doxia Modules Guide</a></li>
         </ul>
 
