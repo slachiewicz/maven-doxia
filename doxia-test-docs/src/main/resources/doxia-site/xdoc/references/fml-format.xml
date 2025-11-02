@@ -93,6 +93,27 @@
 
       </subsection>
 
+      <subsection name="Limitations">
+
+        <p>
+          FML is a specialized format designed for FAQ documents and has the following limitations:
+        </p>
+
+        <h4>No Sink Implementation</h4>
+        <p>
+          FML does not have a sink implementation, meaning you cannot generate FML output from other
+          formats using Doxia. FML is only supported as an input format (parser).
+        </p>
+
+        <h4>Specialized Structure</h4>
+        <p>
+          FML is designed specifically for FAQ (Frequently Asked Questions) documents with a fixed
+          structure of parts containing questions and answers. It is not suitable for general-purpose
+          documentation.
+        </p>
+
+      </subsection>
+
     </section>
 
   </body>

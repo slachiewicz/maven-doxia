@@ -52,6 +52,12 @@
       </p>
 
       <p>
+        <strong>Note:</strong> Due to the Sink API abstractions, some language features of the underlying 
+        markup languages may not be fully supported by all parsers and sinks. Each format's reference 
+        page includes a "Limitations" section that documents any known restrictions.
+      </p>
+
+      <p>
 
         <table border="0">
           <tr>
@@ -102,6 +108,26 @@
             <td><code>xhtml</code></td>
             <td><code>xhtml</code></td>
             <td><code>xhtml</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="./markdown-format.html">Markdown</a></td>
+            <td>Markdown Markup Language</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>markdown</code></td>
+            <td><code>md</code></td>
+            <td><code>markdown</code></td>
+          </tr>
+
+          <tr>
+            <td>XHTML5</td>
+            <td>XHTML5 (Extensible HyperText Markup Language 5)</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>xhtml5</code></td>
+            <td><code>xhtml</code></td>
+            <td><code>xhtml5</code></td>
           </tr>
         </table>
 

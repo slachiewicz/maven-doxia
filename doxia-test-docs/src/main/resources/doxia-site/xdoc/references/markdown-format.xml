@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<document>
+
+  <properties>
+    <title>The Markdown format</title>
+    <author email="khmarbaise@apache.org">Karl Heinz Marbaise</author>
+  </properties>
+
+  <body>
+
+    <section name="The Markdown format">
+
+      <subsection name="Overview">
+
+        <p>
+          Markdown is a popular lightweight markup language, easy to read and easy to write.
+          It is supported by a large panel of websites, text editors/IDEs and converter tools.
+          Markdown format is supported both as source (parser) and destination (sink).
+        </p>
+
+        <p>
+          The Markdown parser uses the <a href="https://github.com/vsch/flexmark-java">flexmark-java</a>
+          library to convert Markdown to HTML, which is then parsed into Doxia Sink API method calls.
+        </p>
+
+      </subsection>
+
+      <subsection name="Limitations">
+
+        <p>
+          Due to the nature of Markdown and the Sink API abstractions, the following limitations apply
+          to the Markdown sink (output generation):
+        </p>
+
+        <h4>Anchors</h4>
+        <p>
+          Markdown does not natively support anchors. The Markdown sink emits HTML anchor tags
+          (<code>&lt;a id="..."&gt;&lt;/a&gt;</code>) to support this Sink API feature.
+        </p>
+
+        <h4>Figures</h4>
+        <p>
+          While the Markdown sink supports basic figure output via standard Markdown image syntax
+          (<code>![alt text](image.png)</code>), it does not support figure captions in native Markdown.
+          Full figure support with captions requires HTML markup.
+        </p>
+
+        <h4>Table Justification</h4>
+        <p>
+          The Markdown sink supports basic table column justification (left, center, right) using
+          extended Markdown table syntax. However, the <code>grid</code> flag for table formatting
+          is not supported in Markdown output.
+        </p>
+
+        <h4>Table Captions</h4>
+        <p>
+          Table captions are not supported in standard Markdown. The Markdown sink ignores table
+          captions as there is no suitable location to emit them, even using HTML markup.
+        </p>
+
+        <h4>Page Breaks</h4>
+        <p>
+          Page breaks are not supported in Markdown output. The Markdown sink ignores page break
+          events as they have no meaningful representation in Markdown.
+        </p>
+
+        <h4>Links in Code Blocks</h4>
+        <p>
+          Links inside code blocks are not supported and will be ignored by the Markdown sink.
+        </p>
+
+      </subsection>
+
+      <subsection name="References">
+
+        <ul>
+          <li><a href="http://daringfireball.net/projects/markdown">Markdown project website</a></li>
+          <li><a href="https://github.github.com/gfm/">GitHub Flavored Markdown Spec</a></li>
+          <li><a href="https://github.com/vsch/flexmark-java">flexmark-java</a>, the library used by this Doxia module</li>
+        </ul>
+
+      </subsection>
+
+    </section>
+
+  </body>
+
+</document>
