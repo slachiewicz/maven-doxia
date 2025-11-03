@@ -1,0 +1,39 @@
+<!---
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+# The APT format
+
+## Overview
+
+APT stands for "Almost Plain Text". It is a wiki-like format that allows you to write
+simple, structured documents with minimal formatting markup. APT was designed to be
+easy to read in its source format.
+
+The APT format is supported both as source (parser) and destination (sink).
+
+## Limitations
+
+Due to the nature of APT and the Sink API abstractions, the following limitations apply
+to the APT sink (output generation):
+
+### Section Title Levels
+
+APT supports section title levels 1 through 5. If a deeper nesting level (greater than 5)
+is requested via the Sink API, the APT sink will replace it with level 5 and emit a warning.
+
+## References
+
+* [Doxia Modules Guide](https://maven.apache.org/doxia/modules/index.html)
