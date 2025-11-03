@@ -286,16 +286,6 @@ code line 2
 
       </subsection>
 
-      <subsection name="Limitations">
-
-        <p>
-          The Xdoc format has comprehensive support in Doxia with both parser and sink implementations.
-          It provides good coverage of the Sink API features and is well-suited for general-purpose
-          documentation. No significant limitations are currently known.
-        </p>
-
-      </subsection>
-
     </section>
 
   </body>
